@@ -1,0 +1,21 @@
+section.hero
+  .hero-slider
+    each release in releases
+      %release-hero release=release
+section.home
+  .news.column
+    .column__title
+      h2 News
+    .column__content
+      each article in articles
+        %article-summary article=article
+    .column__footer
+      = button-to 'View More' 'releases'
+  .releases.column
+    .column__title
+      h2 Latest Releases
+    .column__content.releases__gallery
+      each release in releases
+        %release-cover release=release
+    .column__footer
+      = button-to 'View More' 'releases'

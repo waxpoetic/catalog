@@ -1,0 +1,38 @@
+header
+  section.topbar
+    nav.topbar__menu.navigation
+      = link-to 'Releases' 'releases' class="navigation__link"
+      = link-to 'Artists' 'artists' class="navigation__link"
+      = link-to 'Shop' 'shop' class="navigation__link"
+      = link-to 'Podcast' 'podcast' class="navigation__link"
+main
+  = yield
+footer
+  section.links
+    nav.links__main.sitemap
+      = link-to 'Home' 'index' class="sitemap__link"
+      = link-to 'News' 'news' class="sitemap__link"
+      = link-to 'Shop' 'shop' class="sitemap__link"
+      = link-to 'Releases' 'releases' class="sitemap__link"
+      = link-to 'Artists' 'artists' class="sitemap__link"
+    nav.links__social.sitemap
+      = link-to 'Newsletter' 'signup' class="sitemap__link"
+      = link-to 'Facebook' 'https://facebook.com/WaxPoeticRecords' class="sitemap__link"
+      = link-to 'Twitter' 'https://twitter.com/waxpoeticmusic' class="sitemap__link"
+      = link-to 'Instagram' 'https://instagram.com/waxpoeticmusic' class="sitemap__link"
+      = link-to 'Spotify' 'https://open.spotify.com/???' class="sitemap__link"
+      = link-to 'Soundcloud' 'https://soundcloud.com/WaxPoeticRecords' class="sitemap__link"
+      = link-to 'YouTube' 'https://youtube.com/channel/WaxPoeticRecords' class="sitemap__link"
+    nav.links__media.sitemap
+      = link-to 'Podcast' 'podcast' class="sitemap__link"
+      = link-to 'Events' 'events' class="sitemap__link"
+      = link-to 'Publishing' 'publishing' class="sitemap__link"
+      = link-to 'Production' 'production' class="sitemap__link"
+      = link-to 'Demos' 'demos' class="sitemap__link"
+    nav.links__corporate.sitemap
+      = link-to 'About' 'about' class="sitemap__link"
+      = link-to 'FAQs' 'faq' class="sitemap__link"
+      = link-to 'Legal' 'legal' class="sitemap__link"
+      = link-to 'Contact' 'contact' class="sitemap__link"
+  section.copyright
+    p Copyright &copy; 2014-2016 Wax Poetic Records, LLC. All Rights Reserved.

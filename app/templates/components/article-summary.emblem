@@ -1,0 +1,14 @@
+header.article-summary__header
+  section.article-summary__title
+    h3= title
+  section.article-summary__date
+    time= publishedAt
+main.article-summary__content
+  section.article-summary__body
+    = summary
+  section.article-summary__more
+    = link_to 'Read More' 'article' id
+footer.article-summary__footer
+  nav
+    = link-to 'Comment' 'comments' id
+    = link-to 'Share' 'share' id

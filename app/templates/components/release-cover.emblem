@@ -1,0 +1,5 @@
+= link-to 'release' id title="#{title}"
+  .release-cover__image
+    img src="#{cover}" alt="#{title}"
+  .release-cover__caption
+    p = title
