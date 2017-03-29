@@ -15,8 +15,8 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
-* `cd wax-poetic-records`
+* `git clone https://github.com/waxpoetic/catalog.git` this repository
+* `cd catalog`
 * `npm install`
 * `bower install`
 
