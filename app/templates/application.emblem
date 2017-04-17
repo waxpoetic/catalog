@@ -1,12 +1,13 @@
 header
   section.topbar
+    /img src="logo.png"
     nav.topbar__menu.navigation
       = link-to 'Releases' 'releases' class="navigation__link"
       = link-to 'Artists' 'artists' class="navigation__link"
       = link-to 'Shop' 'shop' class="navigation__link"
       = link-to 'Podcast' 'podcast' class="navigation__link"
-main
-  = yield
+main class="#{page_class}"
+  = outlet
 footer
   section.links
     nav.links__main.sitemap
@@ -17,12 +18,12 @@ footer
       = link-to 'Artists' 'artists' class="sitemap__link"
     nav.links__social.sitemap
       = link-to 'Newsletter' 'signup' class="sitemap__link"
-      = link-to 'Facebook' 'https://facebook.com/WaxPoeticRecords' class="sitemap__link"
-      = link-to 'Twitter' 'https://twitter.com/waxpoeticmusic' class="sitemap__link"
-      = link-to 'Instagram' 'https://instagram.com/waxpoeticmusic' class="sitemap__link"
-      = link-to 'Spotify' 'https://open.spotify.com/???' class="sitemap__link"
-      = link-to 'Soundcloud' 'https://soundcloud.com/WaxPoeticRecords' class="sitemap__link"
-      = link-to 'YouTube' 'https://youtube.com/channel/WaxPoeticRecords' class="sitemap__link"
+      a href='https://facebook.com/WaxPoeticRecords' class="sitemap__link" Facebook
+      a href='https://twitter.com/waxpoeticmusic' class="sitemap__link" Twitter
+      a href='https://instagram.com/waxpoeticmusic' class="sitemap__link" Instagram
+      a href='https://open.spotify.com/???' class="sitemap__link" Spotify
+      a href='https://soundcloud.com/WaxPoeticRecords' class="sitemap__link" Soundcloud
+      a href='https://youtube.com/channel/WaxPoeticRecords' class="sitemap__link" YouTube
     nav.links__media.sitemap
       = link-to 'Podcast' 'podcast' class="sitemap__link"
       = link-to 'Events' 'events' class="sitemap__link"

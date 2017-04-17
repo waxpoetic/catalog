@@ -1,14 +1,14 @@
-section.hero
+section.home-page__slideshow
   .hero-slider
     each release in releases
-      %release-hero release=release
-section.home
+      = release-hero release=release
+section.home-page__featured
   .news.column
     .column__title
       h2 News
     .column__content
       each article in articles
-        %article-summary article=article
+        = article-summary article=article
     .column__footer
       = button-to 'View More' 'releases'
   .releases.column
@@ -16,6 +16,6 @@ section.home
       h2 Latest Releases
     .column__content.releases__gallery
       each release in releases
-        %release-cover release=release
+        = release-cover release=release
     .column__footer
-      = button-to 'View More' 'releases'
+      = link-to 'View More' 'releases'
